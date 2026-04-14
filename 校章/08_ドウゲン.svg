@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+    <linearGradient id="g8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A05520"/>
+      <stop offset="100%" stop-color="#7A3D10"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M200,24 L356,82 L356,240 Q356,336 200,386 Q44,336 44,240 L44,82 Z" fill="#00000033" transform="translate(3,3)"/>
+  <path d="M200,20 L360,80 L360,240 Q360,340 200,390 Q40,340 40,240 L40,80 Z" fill="url(#g8)" stroke="#E88A3A" stroke-width="5"/>
+  <path d="M200,34 L348,90 L348,238 Q348,330 200,376 Q52,330 52,238 L52,90 Z" fill="none" stroke="#E88A3A33" stroke-width="1.5"/>
+
+  <!-- Crossed swords -->
+  <g transform="translate(200,170)" stroke="#FFD0A0" stroke-width="4" stroke-linecap="round" fill="none">
+    <!-- Sword 1 -->
+    <line x1="-70" y1="-60" x2="70" y2="60"/>
+    <line x1="-55" y1="-42" x2="-42" y2="-55" stroke-width="3"/><!-- guard -->
+    <polygon points="70,60 80,55 75,70" fill="#FFD0A0" stroke="none"/><!-- tip -->
+
+    <!-- Sword 2 -->
+    <line x1="70" y1="-60" x2="-70" y2="60"/>
+    <line x1="55" y1="-42" x2="42" y2="-55" stroke-width="3"/>
+    <polygon points="-70,60 -80,55 -75,70" fill="#FFD0A0" stroke="none"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="200" cy="170" r="22" fill="url(#g8)" stroke="#FFD0A0" stroke-width="3"/>
+  <text x="200" y="178" text-anchor="middle" font-family="'Futura','Helvetica Neue',sans-serif" font-weight="800" font-size="22" fill="#FFD0A0">D</text>
+
+  <!-- DOUGEN -->
+  <text x="200" y="285" text-anchor="middle" font-family="'Futura','Helvetica Neue',sans-serif" font-weight="700" font-size="28" fill="#FFD0A0" letter-spacing="5">DOUGEN</text>
+  <text x="200" y="315" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="300" font-size="12" fill="#FFD0A077" letter-spacing="2">道玄坂総合高校</text>
+
+  <!-- Zigzag decoration -->
+  <polyline points="90,75 105,60 120,75 135,60 150,75 165,60 180,75 195,60 210,75 225,60 240,75 255,60 270,75 285,60 300,75" fill="none" stroke="#E88A3A" stroke-width="2" opacity="0.5"/>
+</svg>

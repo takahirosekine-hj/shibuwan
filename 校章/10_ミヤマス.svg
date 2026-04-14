@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+    <linearGradient id="g10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141408"/>
+      <stop offset="100%" stop-color="#0A0A04"/>
+    </linearGradient>
+    <linearGradient id="yellow10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D030"/>
+      <stop offset="100%" stop-color="#C4A800"/>
+    </linearGradient>
+    <filter id="glow10">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <path d="M200,24 L356,82 L356,240 Q356,336 200,386 Q44,336 44,240 L44,82 Z" fill="#00000044" transform="translate(3,3)"/>
+  <path d="M200,20 L360,80 L360,240 Q360,340 200,390 Q40,340 40,240 L40,80 Z" fill="url(#g10)" stroke="url(#yellow10)" stroke-width="4"/>
+  <path d="M200,34 L348,90 L348,238 Q348,330 200,376 Q52,330 52,238 L52,90 Z" fill="none" stroke="#C4A80022" stroke-width="1.5"/>
+
+  <!-- Hexagon -->
+  <g transform="translate(200,160)" filter="url(#glow10)">
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="url(#yellow10)" stroke-width="3"/>
+    <polygon points="0,-42 36,-21 36,21 0,42 -36,21 -36,-21" fill="none" stroke="url(#yellow10)" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Circuit lines from hex vertices -->
+  <g stroke="url(#yellow10)" stroke-width="1.5" opacity="0.5">
+    <line x1="252" y1="130" x2="300" y2="115"/>
+    <line x1="252" y1="190" x2="300" y2="205"/>
+    <line x1="148" y1="130" x2="100" y2="115"/>
+    <line x1="148" y1="190" x2="100" y2="205"/>
+    <line x1="200" y1="100" x2="200" y2="75"/>
+    <line x1="200" y1="220" x2="200" y2="240"/>
+  </g>
+  <!-- Nodes -->
+  <g fill="url(#yellow10)" opacity="0.6">
+    <circle cx="300" cy="115" r="4"/>
+    <circle cx="300" cy="205" r="4"/>
+    <circle cx="100" cy="115" r="4"/>
+    <circle cx="100" cy="205" r="4"/>
+    <circle cx="200" cy="75" r="4"/>
+    <circle cx="200" cy="240" r="4"/>
+  </g>
+
+  <!-- </> code -->
+  <text x="200" y="170" text-anchor="middle" font-family="'SF Mono','Menlo','Courier',monospace" font-weight="700" font-size="32" fill="url(#yellow10)">&lt;/&gt;</text>
+
+  <!-- MIYAMAS -->
+  <text x="200" y="290" text-anchor="middle" font-family="'SF Mono','Menlo','Courier',monospace" font-weight="700" font-size="24" fill="url(#yellow10)" letter-spacing="4" filter="url(#glow10)">MIYAMAS</text>
+  <text x="200" y="315" text-anchor="middle" font-family="'Futura','Helvetica Neue',sans-serif" font-weight="300" font-size="11" fill="#C4A80077" letter-spacing="4">TECH HIGH SCHOOL</text>
+  <text x="200" y="345" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="300" font-size="11" fill="#C4A80044" letter-spacing="2">ミヤマス</text>
+</svg>

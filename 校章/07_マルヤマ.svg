@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+    <linearGradient id="g7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#120015"/>
+      <stop offset="100%" stop-color="#080008"/>
+    </linearGradient>
+    <filter id="neon7">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="178" fill="#00000033" transform="translate(2,2)"/>
+  <circle cx="200" cy="200" r="178" fill="url(#g7)" stroke="#D4267E" stroke-width="5"/>
+  <circle cx="200" cy="200" r="166" fill="none" stroke="#D4267E44" stroke-width="1.5"/>
+
+  <!-- Vinyl grooves -->
+  <g opacity="0.15" fill="none" stroke="#D4267E">
+    <circle cx="200" cy="200" r="140"/>
+    <circle cx="200" cy="200" r="120"/>
+    <circle cx="200" cy="200" r="100"/>
+  </g>
+
+  <!-- Vinyl label -->
+  <circle cx="200" cy="200" r="50" fill="#D4267E" filter="url(#neon7)"/>
+  <circle cx="200" cy="200" r="7" fill="#120015"/>
+
+  <!-- M on label -->
+  <text x="200" y="210" text-anchor="middle" font-family="'Futura','Helvetica Neue',sans-serif" font-weight="900" font-size="40" fill="#FFFFFF">M</text>
+
+  <!-- Headphones -->
+  <g fill="none" stroke="#D4267E" stroke-width="4" stroke-linecap="round" filter="url(#neon7)">
+    <path d="M150,110 Q150,55 200,50 Q250,55 250,110"/>
+    <rect x="140" y="105" width="18" height="30" rx="5" fill="#D4267E" stroke="none"/>
+    <rect x="242" y="105" width="18" height="30" rx="5" fill="#D4267E" stroke="none"/>
+  </g>
+
+  <!-- Arc texts -->
+  <path id="arc7top" d="M70,200 A130,130 0 0,1 330,200" fill="none"/>
+  <text font-family="'Futura','Helvetica Neue',sans-serif" font-weight="700" font-size="15" fill="#FF69B4" letter-spacing="5" filter="url(#neon7)">
+    <textPath href="#arc7top" startOffset="50%" text-anchor="middle">MARUYAMA</textPath>
+  </text>
+
+  <path id="arc7bot" d="M75,220 A135,135 0 0,0 325,220" fill="none"/>
+  <text font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="400" font-size="14" fill="#FF69B488" letter-spacing="2">
+    <textPath href="#arc7bot" startOffset="50%" text-anchor="middle">円山町学園</textPath>
+  </text>
+
+  <!-- Music notes -->
+  <g fill="#D4267E" opacity="0.5">
+    <circle cx="90" cy="170" r="5"/><line x1="95" y1="170" x2="95" y2="148" stroke="#D4267E" stroke-width="2"/><circle cx="98" cy="148" r="3"/>
+    <circle cx="310" cy="170" r="5"/><line x1="315" y1="170" x2="315" y2="148" stroke="#D4267E" stroke-width="2"/><circle cx="318" cy="148" r="3"/>
+    <circle cx="100" cy="250" r="5"/><line x1="105" y1="250" x2="105" y2="228" stroke="#D4267E" stroke-width="2"/><circle cx="108" cy="228" r="3"/>
+    <circle cx="300" cy="250" r="5"/><line x1="305" y1="250" x2="305" y2="228" stroke="#D4267E" stroke-width="2"/><circle cx="308" cy="228" r="3"/>
+  </g>
+</svg>

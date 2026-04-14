@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E50012"/>
+      <stop offset="100%" stop-color="#AA0010"/>
+    </linearGradient>
+    <clipPath id="shield1">
+      <path d="M200,20 L360,80 L360,240 Q360,340 200,390 Q40,340 40,240 L40,80 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Shadow -->
+  <path d="M200,24 L356,82 L356,240 Q356,336 200,386 Q44,336 44,240 L44,82 Z" fill="#00000033" transform="translate(3,3)"/>
+
+  <!-- Main shield -->
+  <path d="M200,20 L360,80 L360,240 Q360,340 200,390 Q40,340 40,240 L40,80 Z" fill="url(#g1)" stroke="#FFFFFF" stroke-width="6"/>
+
+  <!-- Inner border -->
+  <path d="M200,34 L348,90 L348,238 Q348,330 200,376 Q52,330 52,238 L52,90 Z" fill="none" stroke="#FFFFFF44" stroke-width="1.5"/>
+
+  <!-- White horizontal banner -->
+  <rect x="55" y="185" width="290" height="52" rx="2" fill="#FFFFFF" clip-path="url(#shield1)"/>
+
+  <!-- 渋一 text in banner -->
+  <text x="200" y="220" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="900" font-size="38" fill="#CC0000" letter-spacing="8">渋一</text>
+
+  <!-- Flame icon above banner -->
+  <g transform="translate(200,130)">
+    <path d="M0,-55 C15,-35 35,-15 35,15 C35,35 20,50 0,50 C-20,50 -35,35 -35,15 C-35,-15 -15,-35 0,-55Z" fill="#FFFFFF" opacity="0.95"/>
+    <path d="M0,-30 C8,-18 18,-5 18,12 C18,22 10,30 0,30 C-10,30 -18,22 -18,12 C-18,-5 -8,-18 0,-30Z" fill="#CC0000"/>
+  </g>
+
+  <!-- School name bottom -->
+  <text x="200" y="295" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-weight="400" font-size="14" fill="#FFFFFF99" letter-spacing="3">SHIBUYA DAIICHI</text>
+
+  <!-- Three stars -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <polygon points="160,320 162,326 168,326 163,330 165,336 160,332 155,336 157,330 152,326 158,326"/>
+    <polygon points="200,315 202,321 208,321 203,325 205,331 200,327 195,331 197,325 192,321 198,321"/>
+    <polygon points="240,320 242,326 248,326 243,330 245,336 240,332 235,336 237,330 232,326 238,326"/>
+  </g>
+</svg>
